@@ -36,17 +36,43 @@
 
     
 
-     $asso_array = array(
-   "cartoon" => "Mickey Maouse",
-   "anime" => "Super Mario",
-   "game" => "packman",
-   );
-echo "cartoon : " .$asso_array["cartoon"]. "<br/>";
-echo "anime : " .$asso_array["anime"]. "<br/>" ;
-echo "game : " .$asso_array["game"];
+//$ Advanced
+//      $asso_array = array(
+//    "cartoon" => "Mickey Maouse",
+//    "anime" => "Super Mario",
+//    "game" => "packman",
+//    );
+// echo "cartoon : " .$asso_array["cartoon"]. "<br/>";
+// echo "anime : " .$asso_array["anime"]. "<br/>" ;
+// echo "game : " .$asso_array["game"];
     
     
-    
+$list = array(
+    	"cartoon" => array
+    	    (
+    	    "micky_maouse" => 1928,
+    	    "the_mole" => 1957,
+    	    "Ratatouille"  => 2007
+    	    ),
+    	"anime" =>  array
+    	    (
+    	    "fullmetal_alchemist" => 2009,
+    	    "attack_on_titak" => 2013,
+    	    "hunter_x_hunter"  =>2011
+    	    ),
+    	"game" =>  array
+    	    (
+    	    "neverhood" => 1997,
+    	    "samorast3" => 2006,
+    	    "indsie" => 2016
+    	    )
+    	);
+    	echo "created Year of Mick Mouse: ";
+    	echo $list['cartoon']['micky_maouse'] .  "<br/>" ;
+    	echo "created Year of Fullmetal Alchemist: ";
+    	echo $list['anime']['fullmetal_alchemist'] . "<br/>" ;
+    	echo "created Year of Neverhood: ";
+    	echo $list['game']['neverhood'] . "<br/>" ;
     
     
     
